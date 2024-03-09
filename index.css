@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+:root {
+  --gray: #555b74;
+  --green: #333535;
+  --lightGreen: #b6e59b;
+  --yellow: #fce7a9;
+  --red: #cf4434;
+}
+
+body {
+  background-color: var(--green);
+  font-size: 1.2rem;
+}
+
+#board {
+  width: 100%;
+  max-width: 480px;
+  height: 100px;
+  max-height: 480px;
+  border: 5px solid var(--gray);
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 5%;
+  background-color: var(--gray);
+}
+
+.block {
+  width: 118px;
+  height: 118px;
+  border: 1px solid var(--gray);
+  overflow: hidden;
+  background-color: var(--gray);
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  max-width: 50%;
+  align-self: center;
+  padding: 10px 50px;
+  background-color: var(--gray);
+  color: var(--yellow);
+  border: none;
+  box-shadow: 5px 5px 0px 0px var(--gray);
+  font-size: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  display: none;
+}
+
+#movesCounter {
+  display: none;
+  justify-content: center;
+  margin: 5px;
+  max-width: 50%;
+  min-width: 230px;
+  align-self: center;
+  padding: 10px 50px;
+  background-color: var(--gray);
+  color: var(--yellow);
+  border: none;
+  box-shadow: 5px 5px 0px 0px var(--gray);
+}
+
+.finished {
+  display: none;
+  justify-content: center;
+  margin: 5px;
+  max-width: 50%;
+  min-width: 230px;
+  align-self: center;
+  padding: 10px 50px;
+  background-color: var(--gray);
+  color: var(--yellow);
+  border: none;
+  box-shadow: 5px 5px 0px 0px var(--gray);
+  flex-direction: column;
+}
+
+#alert {
+  position: fixed;
+  top: 25%;
+  display: none;
+  justify-content: center;
+  margin: 5px;
+  max-width: 50%;
+  min-width: 230px;
+  align-self: center;
+  padding: 10px 50px;
+  background-color: var(--gray);
+  color: var(--yellow);
+  border: none;
+  box-shadow: 5px 5px 0px 0px var(--gray);
+}
